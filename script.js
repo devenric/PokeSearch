@@ -1,4 +1,4 @@
-document.getElementById('buscar').addEventListener('click', () => {
+document.getElementById('buscar').addEventListener('click', () => { // cuando cliques
     const nombre = document.getElementById('nombre').value;
     if (!nombre) {
         alert('Por favor ingresa un nombre de Pokémon');
