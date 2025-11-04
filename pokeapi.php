@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de Pokémon</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Buscador de Pokémon</h1>
-    </header>
-    <main>
-        <section>
-            <form id="pokemonForm" onsubmit="return false;">
-                <input type="text" id="nombre" placeholder="Ingresa el nombre del Pokémon">
-                <button type="button" id="buscar">Buscar</button>
-            </form>
-            <div id="resultado"></div>
-        </section>
-    </main>
-    <script src="script.js"></script>
-    <?php
+<?php
 header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -93,6 +71,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     ]);
 }
     ?>
-</body>
-</html>
+
 
